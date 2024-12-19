@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.heading {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.transparent {
+  background-color: #272935;
+}
+
+.black p {
+  font-size: 26px;
+  padding-top: 40px;
+}
+
+.black {
+  background-color: #ffffff;
+  color: #272727;
+  font-size: 22px;
+}
+
+.font18 {
+  font-size: 20px;
+}
+
+.p30 {
+  /* padding: 30px 12px; */
+}
+
+.p60 {
+  /* padding: 60px 12px; */
+}
+
+/* background-color:#181a1d; */
+
+.white {
+  color: white;
+}
+
+.list-1 li {
+  margin: 27px 0px;
+  list-style-type: none;
+}
+
+.list-1 {
+  margin-top: 15px;
+}
+
+footer {
+  /* background-color: #8A9A5B;
+  
+  */
+  border: 2px solid white;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  margin-top: 50px;
+  background-color: #1a382c;
+  color: white;
+}
+
+footer .end-list> :nth-child(1) {
+  list-style-type: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer .end-list li {
+  margin: 15px 0px;
+  font-size: 22px;
+  list-style-type: none;
+}
+
+footer .end-list :nth-child(1):hover {
+  transform: translatey(-2px);
+  color: white;
+}
+
+.product-name u {
+  font-weight: bold;
+  color: black;
+  font-size: 21px;
+}
+
+.price {
+  font-size: 28px;
+  color: #056e13;
+  font-weight: bold;
+  background: transparent;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.img-responsive2 {
+  max-width: 100%;
+  height: auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.heading2 {
+  color: rgb(53, 53, 53);
+  font-size: 48px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin: 25px 0px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Optional: Make the element start a bit lower */
+  }
+
+  100% {
+    opacity: 1;
+    /* End fully opaque */
+    transform: translateY(0);
+    /* Optional: End in the original position */
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-out forwards;
+  /* Apply the animation */
+  opacity: 0;
+  /* Start with invisible */
+  will-change: opacity, transform;
+  /* Optimize for performance */
+}
+
+/* .bg-2 {
+  background-color:#272935;
+  color:white;
+} */
+
+.borderbottom {
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+
+.heading-style {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+    font-size: 75px;
+  /* Adjust the size to make it bigger */
+  font-weight: 600;
+  /* Semi-bold for prominence */
+  letter-spacing: 1.2px;
+  /* Slightly increased letter spacing for a clean look */
+  line-height: 1.4;
+  /* Improved readability with increased line height */
+  color: rgb(38, 39, 37);
+  /* Neutral dark color for text */
+  text-transform: uppercase;
+  /* Adds a modern, bold feel */
+  text-align: center;
+  /* Center the heading for a balanced look */
+  margin: 20px 0;
+  /* Adds spacing above and below the heading */
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);/* /* Subtle shadow for depth */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Smooth transition for hover effects */
+}
+
+.heading-style:hover {
+  transform: translateY(-5px);
+  /* Slight lift effect when hovered */
+  color: #0e2946;
+}
+
+.color {
+  color: #4682b4;
+  font-weight: 700;
+  margin: 3px 0px;
+  line-height: 1.1;
+  font-size: 20px;
+}
+
+.btn-primary1 {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 15px 7px;
+  font-size: 17px;
+  font-weight: 600;
+  background: rgb(93, 148, 221);
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.btn-primary1:hover {
+  color: rgb(255, 253, 253);
+  background-color: #4682b4;
+  transition: 0.5s;
+}
+
+.border-2 {
+  border: 1px solid rgb(217, 248, 219);
+  border-radius: 53px;
+  margin-top: 20px;
+}
+
+.banner {
+  background-image: url(Assets/Images/pexels-bertellifotografia-15141515.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+}
+
+.text-block {
+  width: 80%;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px rgba(85, 85, 85, 0.8);
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.text-block h1 {
+  font-size: 55px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.text-block p {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.text-block2 {
+  background-color: rgb(255, 255, 255);
+  padding: 25px 0px;
+  min-height: 55vh;
+  margin-top: 85px;
+}
+
+.text-block2 p {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.text-block2 h3 {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+
+.text-block3 p {
+  font-size: 23px;
+  font-weight: 600;
+}
+.para{
+font-size: 18px; 
+font-weight: 500;
+}
+.aboutimg {
+  margin-top: 5%;
+}
+
+
+.h2class{
+  font-size: 32px;
+  font-weight: 600;
+}
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar {
+  position: sticky;
+}
+
+.sticky {
+  position: sticky;
+  background: linear-gradient(90deg, #22272c 0%, #1a382c 100%);
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  color: #222;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #555;
+}
+.fontsize{
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.team-member {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 40px;
+  box-shadow: 0 4px 5px rgba(31, 255, 2, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Add transition for hover effect */
+}
+
+.team-member:hover {
+  transform: translateY(-7px);  /* Moves the card up slightly */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);  /* Adds a stronger shadow effect */
+}
+
+.form-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .black p {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  .list-1 li {
+    font-size: 14px;
+  }
+
+  .black {
+    font-size: 14px;
+  }
+
+  footer .end-list li {
+    font-size: 13px;
+  }
+
+  .product-name u {
+    font-size: 15px;
+  }
+
+  .color {
+    font-size: 14px;
+  }
+
+  .btn-primary1 {
+    font-size: 10px;
+    padding: 6px 7px;
+  }
+
+  .border-2 {
+    border: 0px solid white;
+  }
+
+  .price {
+    font-size: 13px;
+  }
+
+  .heading-2 {
+    font-size: 23px;
+  }
+
+  footer .end-list :nth-child(1) {
+    font-size: 14px;
+  }
+
+  .img-responsive {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+  }
+
+  .text-block h1 {
+    font-size: 28px;
+  }
+
+  .text-block p {
+    font-size: 16px;
+  }
+
+  .text-block2 p {
+    margin-top: 25px;
+    line-height: 23px;
+  }
+
+  .text-block2 h1 {
+    font-size: 29px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .text-block2 p {
+    font-size: 16px;
+  }
+  .text-block3 p{
+    font-size: 15px;
+  }
+.heading-style{
+  font-size: 31px;
+}
+.h2class{
+  font-size: 23px;
+  
+}
+
+.team-member h4{
+font-size: 11px;
+}
+
+.team-member h4 p{
+  font-size: 13px;
+}
+
+.para{
+  font-size: 10px;
+}
+}
+
+
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
