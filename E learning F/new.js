@@ -8,7 +8,7 @@ function checklogin(event){
   
     if(!currentUser){
       alert("Please login first");
-      window.location.replace("form.html");
+      window.location.replace("index.html");
     }
     else{
       window.location.href = event.target.href;
@@ -58,7 +58,7 @@ userEmail.value = "";
 userPassword.value = "";
 
 
-alert("signed up successfully shukar");
+alert("signed up successfully");
 
 
 }
@@ -84,8 +84,8 @@ for(var i = 0; i < usersArray.length; i++){
     localStorage.setItem("currentuser", JSON.stringify(usersArray[i]))
     
     flag = true;
-    window.location.replace("index.html");
-    // document.getElementById("display").innerText = usersArray[i].userName
+    window.location.replace("home.html");
+    document.getElementById("display").innerText = usersArray[i].userName
     alert(`You ${usersArray[i].userName} are logged in finally`);
     break;
   }
