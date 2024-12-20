@@ -1,0 +1,50 @@
+
+
+footer {
+    
+    border: 2px solid white;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-top: 50px;
+    background-color: #1a382c;
+    color: white;
+  }
+  
+  footer .end-list> :nth-child(1) {
+    list-style-type: none;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  footer .end-list li {
+    margin: 15px 0px;
+    font-size: 22px;
+    list-style-type: none;
+  }
+  
+  footer .end-list :nth-child(1):hover {
+    transform: translatey(-2px);
+    color: white;
+  }
+  
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    footer .end-list :nth-child(1) {
+        font-size: 14px;
+      }
+      footer .end-list li {
+        font-size: 13px;
+      }
+      footer {
+        font-size: 14px;
+      }
+    
+}
